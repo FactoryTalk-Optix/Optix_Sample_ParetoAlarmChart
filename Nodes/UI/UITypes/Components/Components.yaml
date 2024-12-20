@@ -1,0 +1,223 @@
+Name: Components
+Type: FolderType
+Children:
+- Name: MyNavigationPanel
+  Id: g=e6960bef5f488f9640e0e8c5249746db
+  Supertype: NavigationPanel
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=5;i=1181
+    Direction: Forward
+  - Class: Reference
+    Target: ns=5;i=1183
+    Direction: Forward
+  - Name: Panels
+    Type: BaseObjectType
+    Children:
+    - Name: Panel1
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Alarm console"}
+      - Name: Panel
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Optix_Sample_ParetoAlarmChart/UI/Screens/AlarmConsole"
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+    - Name: Panel2
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Alarm grid"}
+      - Name: Panel
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Optix_Sample_ParetoAlarmChart/UI/Screens/AlarmGrid"
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+    - Name: Panel3
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Pareto Char"}
+      - Name: Panel
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Optix_Sample_ParetoAlarmChart/UI/Screens/AlarmHistoryParetoChart"
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+  - Name: CurrentPanel
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+  - Name: CurrentTabIndex
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+- Name: ParetoChart
+  Id: g=f8669c7c3e23e75b9c79d7c3eb2aaf2c
+  Supertype: WebBrowser
+  ReferenceType: HasComponent
+  Children:
+  - Name: URL
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Class: Reference
+    Target: ns=5;i=354
+    Direction: Forward
+  - Class: Reference
+    Target: ns=5;i=356
+    Direction: Forward
+  - Class: Reference
+    Target: ns=5;i=358
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 836.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 468.0
+  - Name: ParetoChartLogic
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: RefreshGraph
+      Id: g=bb82cc09c122c717392bea5a6ecc34e9
+  - Name: AlarmHistoryStore
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_Sample_ParetoAlarmChart/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: AlarmHistoryTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Optix_Sample_ParetoAlarmChart/Loggers/AlarmsEventLogger1@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2024-06-24T00:00:00.0000000"
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2024-06-24T00:00:00.0000000"
+  - Name: QueryData
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"SELECT ConditionName FROM {0:sql_identifier} WHERE ActiveState_Id=1 AND LocalTime BETWEEN {2:sql_literal} AND {3:sql_literal} ORDER BY LocalTime DESC"}
+      - Name: ns=3;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../AlarmHistoryTableName"
+      - Name: ns=3;Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../From"
+      - Name: ns=3;Source3
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../To"
+  - Name: DarkMode
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ns=9;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    ModellingRule: None
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 9
+      },
+      "Body": {
+       "libraryGuid": "bdcb7af50fa7da41f0eac7e64d80763c",
+       "objectGuid": "c5f4bd79c6562929cb570d057e3e2cf3",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- File: AlarmWidgets/AlarmWidgets.yaml

@@ -1,0 +1,8 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: AlarmsBitArray
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [100]

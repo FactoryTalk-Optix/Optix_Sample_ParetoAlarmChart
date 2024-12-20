@@ -1,0 +1,891 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- Name: 1
+  Id: g=7db9f9d019ea6324b82b8f5878b0a4eb
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=bdfd7986b2914d77bf33ee48962f9430
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=dcce39e9378306ea84f9c6e24f0f0981
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=6c05ec20b8d680abd9023ccb04b7f236
+      Type: DynamicLink
+      DataType: NodePath
+      Children:
+      - Name: Mode
+        Id: g=7d19da7f849b3c442196bb88757f52ae
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: DynamicLinkFormatter
+        Id: g=84787059a65e6673b7a0cdbdb004aacd
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=17b52b881685005dca1fc3355e34ef3f
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"../../../Model/AlarmsBitArray[{0}]"}
+        - Name: ns=3;Source0
+          Id: g=62015dd29771c357c1fdfab801c1be7a
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=d24058759be311c213aca881256f8ccc
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@BrowseName"
+  - Name: LastEvent
+    Id: g=dca1dd1c4bcff4bd23cf2f53024006c8
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=17;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=6803a2bbaa9af421f232437aa5b7e9d2
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"This is my Alarm number 1"}
+  - Name: AutoAcknowledge
+    Id: g=eacbc33d8b70c98ed73bd8a6c319eb05
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=df6f8e6c0f77a4f0a3b528bbe6099bb0
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: 2
+  Id: g=42c4b49d9905c79256748a65cdc4aa94
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=62b3f94392b96d5f816cb3a6c08b8fdc
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=b94ec81e67ed775b688b72b455c6c7dc
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c5fa44d4a18d1b2e3a1ad550aed455e8
+      Type: DynamicLink
+      DataType: NodePath
+      Children:
+      - Name: Mode
+        Id: g=15471629f610cb2390cfdd2bbf70b25f
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: DynamicLinkFormatter
+        Id: g=4a1ab4b7f232d3ecd1783cede0ebdbbe
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=3a865a5b51f66afee7020ea9c294a354
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"../../../Model/AlarmsBitArray[{0}]"}
+        - Name: ns=3;Source0
+          Id: g=0b9c920dfafdeab518c729232578528f
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=89021f85d5a1ec9fe8ffc6b430022177
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@BrowseName"
+  - Name: LastEvent
+    Id: g=6640f862582ca41c0eb6002b84a81f63
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=17;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=3849e2e97f7eccd90f70534841a0ce66
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"This is my Alarm number 2"}
+  - Name: AutoAcknowledge
+    Id: g=425c391f23d66778b984cfc9532cf67a
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=e0ed03ec7daf63a73ccb8ddc3a731fc6
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: 3
+  Id: g=ae6bf0fac8d4c8ac04e5f1f2c4a8960c
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=d21cb36ed5dde3cd8405d6fba74e3631
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=9909f489a0aaf09adf6021b814c66f91
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=92973aba6defc77db685103143e36492
+      Type: DynamicLink
+      DataType: NodePath
+      Children:
+      - Name: Mode
+        Id: g=4102c476fea7b585edf9bf9df80e7b79
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: DynamicLinkFormatter
+        Id: g=1e34af2711da4fb8f1cad71cafa1ac58
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=fd24f193a4e70d0b6d9d533107ea1c2a
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"../../../Model/AlarmsBitArray[{0}]"}
+        - Name: ns=3;Source0
+          Id: g=9806cae93e0d2926fce8d825c1948d93
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=2f4dcfd825e22f6172f0395fa7ac9511
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@BrowseName"
+  - Name: LastEvent
+    Id: g=1aecda5444959e8add91c2b24bf32f66
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=17;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=80919fd5529069f36e62468e711d713c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"This is my Alarm number 3"}
+  - Name: AutoAcknowledge
+    Id: g=6b289357f037b7530545d59d748ba381
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=5106a64060b5a563521a18f8b9fe94ae
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: 4
+  Id: g=74d20d34554c4b9824fb47694a4796e9
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=bf288ccf67aa877d8dc0c62d5df7660b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=432a45d8c3dcd41069548345e4fe3605
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=5b5c37a59179e31b606702b7b56bafaf
+      Type: DynamicLink
+      DataType: NodePath
+      Children:
+      - Name: Mode
+        Id: g=1a99f05a5b30fd30ec5f0d7ca535a57a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: DynamicLinkFormatter
+        Id: g=b0632d240ea7441f36b0df908df2bc8c
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=160dafcadc98f88bd64a3530211d3554
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"../../../Model/AlarmsBitArray[{0}]"}
+        - Name: ns=3;Source0
+          Id: g=b578b5b273b77e155d81ed5651c7e852
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=715fe51405192a32c2f17e360a9d008a
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@BrowseName"
+  - Name: LastEvent
+    Id: g=c32dbf11a09fd11962eec3144da270be
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=17;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=4fa5abd7cfdd40a2ddd8ff684f3357db
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"This is my Alarm number 4"}
+  - Name: AutoAcknowledge
+    Id: g=de481791d73c39f4b6272ce8f8654069
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=7a89bf723149bffa156e64c3e3d350a8
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: 5
+  Id: g=9a5be0b12d6c9854a318d593e4acbdfa
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=cac5ee375a996124daed005904577ff6
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=ddc0b274ba70cb7204affed0e733d297
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c98579be3494a8bd157dae8da6d55883
+      Type: DynamicLink
+      DataType: NodePath
+      Children:
+      - Name: Mode
+        Id: g=e345575c800e457c160353d2c11ab0e7
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: DynamicLinkFormatter
+        Id: g=0012da9bfa4d997bdaab6c927fb6e5fd
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=004a2432d75f06a7c68f12337c7c9c83
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"../../../Model/AlarmsBitArray[{0}]"}
+        - Name: ns=3;Source0
+          Id: g=b4a2954dd9eb7d0917d6ddede53b7721
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=54823feb73d0d2dbf35dd1a7cfdaaa6c
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@BrowseName"
+  - Name: LastEvent
+    Id: g=9569660897241dcdbcfb4d3fcea56d67
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=17;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=b5ed9f4b354c37cc39634404fad5d9a1
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"This is my Alarm number 5"}
+  - Name: Severity
+    Id: g=4dd79841287515ce635518f2bbab48a8
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: AutoAcknowledge
+    Id: g=144441058c27aaa3c8cd39934172ecf8
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=be1f6cda26f2e063c2e5a77a6534f177
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: 6
+  Id: g=ffb597c4da90e16275ff34b3687815ec
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=ea434ee269fbcdb345db60d39432ff8c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=38cf86072f21a42e44cc111b312692c7
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=43d2311890ab71611131eced00465bac
+      Type: DynamicLink
+      DataType: NodePath
+      Children:
+      - Name: Mode
+        Id: g=3e5f3ff0c052950967dddaa5515ca63a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: DynamicLinkFormatter
+        Id: g=c8a33dbb265b71b6725d188d58b8fa86
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=d3bf3791fbfa7cbaf6b4c179bd6032d6
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"../../../Model/AlarmsBitArray[{0}]"}
+        - Name: ns=3;Source0
+          Id: g=06c62e254b51c2a163d0ba9ed325a949
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=839ef56a2f3668c8a393e2433f244f6c
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@BrowseName"
+  - Name: LastEvent
+    Id: g=85702741b1e962230942903c40ed9057
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=17;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=b6292cc458bfb69592a9c903d61fa22c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"This is my Alarm number 6"}
+  - Name: AutoAcknowledge
+    Id: g=0cc08e813fbca2f87cfe2cabb33992ce
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=e1afd378bbdb2faa0a68924257af0681
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: 7
+  Id: g=f721627963709790945ac1e77ad091f3
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=6ef573faf1ad00ecbc5f738653b966ba
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=08e8b17d4e9735e0463e583922ddc969
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=28ee8b6792194e89bc4f4731ea7815f5
+      Type: DynamicLink
+      DataType: NodePath
+      Children:
+      - Name: Mode
+        Id: g=40d9bbb35d5b4086bcffe58031e604c5
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: DynamicLinkFormatter
+        Id: g=40280928b3ede37f6f84783f47dc59ab
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=dfaa3c093a2e038bee14e72a9567897d
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"../../../Model/AlarmsBitArray[{0}]"}
+        - Name: ns=3;Source0
+          Id: g=82249a9a4b3b515316be4a4995cfe389
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=9f699075949127327665aefae1fa0b1a
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@BrowseName"
+  - Name: LastEvent
+    Id: g=7d04ccbeea5b96bc41e82e6602fd1dc9
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=17;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=d324b722901f01e18276a4a677eb865c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"This is my Alarm number 7"}
+  - Name: AutoAcknowledge
+    Id: g=19e79ea3e4273acf7aa7bd5c4d84d239
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=98f026fc5f17c892ec1a87c9068b59f3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: 8
+  Id: g=85ce2aeb9f29b386a4314130f2dedb4b
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=9a435d09ada0d3c0e392b0686ef90a4c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5e31b117cf89c8450742ef6b84c4add0
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=847b8031c81c3c8cdf247a8705564f70
+      Type: DynamicLink
+      DataType: NodePath
+      Children:
+      - Name: Mode
+        Id: g=263c40a8c2b592b88f04c53ce044b8f2
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: DynamicLinkFormatter
+        Id: g=c5fe812322f4511bc4add402a4fb2ad4
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=15f313ebf3a88f150d5c13f1579bad0a
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"../../../Model/AlarmsBitArray[{0}]"}
+        - Name: ns=3;Source0
+          Id: g=ed5257df9cc7968cf5539a52f5db3b2f
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=be3330e151d2e3728a5eceb857df3b4b
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@BrowseName"
+  - Name: LastEvent
+    Id: g=521b64e292205750e383f66a425586fe
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=17;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=ba6a82ef9385b74060dea656d03c23e5
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"This is my Alarm number 8"}
+  - Name: AutoAcknowledge
+    Id: g=88c1ed0f80d640c672ce4d855141f2d5
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=453608cec8de014dd7b445ec329f62a8
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: 9
+  Id: g=dbbd5215b12710d1def23c04149dd032
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=ea26c449874e8106b3d00685743b0bab
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=7621591118fde8b6de4fc15e80aa659f
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=b2239d46d715669c24cca5f8c867cb43
+      Type: DynamicLink
+      DataType: NodePath
+      Children:
+      - Name: Mode
+        Id: g=886e280cc3807957e40c22d59aa6ac81
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+      - Name: DynamicLinkFormatter
+        Id: g=a7e46a8bfd22dd44460fdd8406c7a1d8
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Id: g=1b79f6f4202ba5d184665171547d9151
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"../../../Model/AlarmsBitArray[{0}]"}
+        - Name: ns=3;Source0
+          Id: g=983edf716bf43bc36d0ded3964bd7483
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=0b4e6c9f3a3786aaf96dfa19394efc3e
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@BrowseName"
+  - Name: LastEvent
+    Id: g=d16666ee42d1a90d1460cb03830cc90b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=17;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=14e1e839217b02eb2bba25ee0db8059d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"This is my Alarm number 9"}
+  - Name: AutoAcknowledge
+    Id: g=f8d0da68234e4b76b6a93720d9f7306e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=b408adb578d29c240009dab0e1a6e6d9
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
