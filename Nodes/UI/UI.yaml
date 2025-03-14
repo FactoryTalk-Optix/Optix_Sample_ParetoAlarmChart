@@ -343,6 +343,16 @@ Children:
           Type: PropertyType
           DataType: NodeId
           Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Name: AllowedRemoteSources
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["localhost","echarts.apache.org","dg6zr3.csb.app"]
+  - Name: MaxNumberOfConnections
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
 - Name: InteractiveUISession
   Id: g=cae59d243ef1794f7c88427f32647c62
   Supertype: UISession

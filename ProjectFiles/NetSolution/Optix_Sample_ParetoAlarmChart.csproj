@@ -15,5 +15,5 @@
   <PropertyGroup>
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
-  <Import Project="Optix_Sample_ParetoAlarmChart.references"/>
+  <Import Project="Optix_Sample_ParetoAlarmChart.references" />
 </Project>
