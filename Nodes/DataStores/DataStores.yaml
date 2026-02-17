@@ -56,6 +56,10 @@ Children:
         - Name: LocalTime
           Type: StoreColumn
           DataType: DateTime
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
   - Class: Reference
     Target: ns=25;i=30
     Direction: Forward
@@ -113,4 +117,7 @@ Children:
     Direction: Forward
   - Class: Reference
     Target: ns=21;i=59
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=67
     Direction: Forward

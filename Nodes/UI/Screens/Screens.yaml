@@ -1887,6 +1887,10 @@ Children:
             Type: BaseDataVariableType
             DataType: NodeId
             AccessLevel: Read
+          - Name: SortOrder
+            Type: BaseDataVariableType
+            DataType: SortOrderEnum
+            Value: 1
         - Name: ButtonsHorizontalLayout
           Type: RowLayout
           Children:
@@ -3309,7 +3313,6 @@ Children:
           - Name: SortOrder
             Type: BaseDataVariableType
             DataType: SortOrderEnum
-            ModellingRule: Optional
             Value: 1
           - Name: LeftMargin
             Type: BaseVariableType
@@ -3319,6 +3322,16 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
         - Name: ParetoChart1
           Type: ParetoChart
           Children:

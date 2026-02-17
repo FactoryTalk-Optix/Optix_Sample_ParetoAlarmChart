@@ -1446,7 +1446,6 @@ Children:
       - Name: SortOrder
         Type: BaseDataVariableType
         DataType: SortOrderEnum
-        ModellingRule: Optional
       - Name: SortColumn
         Type: BaseDataVariableType
         DataType: NodeId
@@ -4044,7 +4043,6 @@ Children:
       - Name: SortOrder
         Type: BaseDataVariableType
         DataType: SortOrderEnum
-        ModellingRule: Optional
         Value: 1
       - Name: SortColumn
         Type: BaseDataVariableType

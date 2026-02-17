@@ -53,7 +53,7 @@ Children:
       - Name: Title
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"Pareto Char"}
+        Value: {"LocaleId":"en-US","Text":"Pareto Chart"}
       - Name: Panel
         Type: NodePointer
         DataType: NodeId

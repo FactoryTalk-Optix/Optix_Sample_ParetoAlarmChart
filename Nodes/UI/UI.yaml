@@ -187,13 +187,28 @@ Children:
   - Name: InteractiveColorGradientPercent
     Type: BaseDataVariableType
     DataType: Float
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
 - Name: NativePresentationEngine
   Type: NativePresentationEngine
   ReferenceType: HasOrderedComponent
   Children:
-  - Name: EnableVirtualKeyboard
+  - Name: VirtualKeyboard
     Type: BaseDataVariableType
-    DataType: Boolean
+    DataType: VirtualKeyboardEngineTypeEnum
   - Name: StartWindow
     Type: NodePointer
     DataType: NodeId
@@ -343,6 +358,20 @@ Children:
           Type: PropertyType
           DataType: NodeId
           Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+      - Class: Reference
+        Target: ns=1;i=303
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=324
+        Direction: Forward
+      - Name: BearerAccessToken
+        Type: BaseVariableType
+        DataType: String
+        AccessLevel: Read
+      - Name: ScaleFactor
+        Type: BaseDataVariableType
+        DataType: Double
+        Value: 1.0
   - Name: AllowedRemoteSources
     Type: BaseDataVariableType
     DataType: String
@@ -353,6 +382,19 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
+  - Name: VirtualKeyboard
+    Type: BaseDataVariableType
+    DataType: VirtualKeyboardEngineTypeEnum
+  - Name: AllowedLocalSources
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["*"]
+  - Name: EnableAutomationIDs
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
 - Name: InteractiveUISession
   Id: g=cae59d243ef1794f7c88427f32647c62
   Supertype: UISession
@@ -433,6 +475,20 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Class: Reference
+    Target: ns=1;i=303
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=324
+    Direction: Forward
+  - Name: BearerAccessToken
+    Type: BaseVariableType
+    DataType: String
+    AccessLevel: Read
+  - Name: ScaleFactor
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.0
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
@@ -500,6 +556,10 @@ Children:
             DataType: Color
             ModellingRule: Optional
             Value: "#000000"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
         - Name: Logo
           Type: Image
           Children:
@@ -572,6 +632,10 @@ Children:
             DataType: Color
             ModellingRule: Optional
             Value: "#000000"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
       - Name: User
         Type: Panel
         Children:
@@ -608,6 +672,10 @@ Children:
             DataType: Color
             ModellingRule: Optional
             Value: "#000000"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
         - Name: Content
           Type: RowLayout
           Children:
@@ -739,6 +807,10 @@ Children:
               DataType: Color
               ModellingRule: Optional
               Value: "#ffffff00"
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
@@ -784,6 +856,10 @@ Children:
             DataType: Color
             ModellingRule: Optional
             Value: "#000000"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
         - Name: DateTime
           Type: ColumnLayout
           Children:
@@ -1077,7 +1153,7 @@ Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Pareto Char"}
+              Value: {"LocaleId":"en-US","Text":"Pareto Chart"}
             - Name: Panel
               Type: NodePointer
               DataType: NodeId
@@ -1150,6 +1226,10 @@ Children:
           DataType: Color
           ModellingRule: Optional
           Value: "#000000"
+        - Name: BorderThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -1175,3 +1255,4 @@ Children:
       Value: "{Session}/IsWeb"
 - File: Screens/Screens.yaml
 - File: UITypes/UITypes.yaml
+- File: Keyboards/Keyboards.yaml
